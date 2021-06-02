@@ -17,6 +17,6 @@ RUN dotnet publish "Docker.Core.Api.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
-COPY ..
+COPY --from=publish /app/publish .
 EXPOSE 8081
 ENTRYPOINT ["dotnet", "Docker.Core.Api.dll"]
