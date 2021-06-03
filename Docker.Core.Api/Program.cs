@@ -20,7 +20,7 @@ namespace Docker.Core.Api
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>().UseUrls("http://*:8081");
+                    webBuilder.UseStartup<Startup>();
                 });
     }
 }
