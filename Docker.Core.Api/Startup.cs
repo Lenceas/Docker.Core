@@ -43,7 +43,6 @@ namespace Docker.Core.Api
                 app.UseSwaggerUI(c =>
                 {
                     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Docker.Core.Api v1");
-                    c.RoutePrefix = string.Empty;
                 });
             }
 
