@@ -5,11 +5,11 @@ docker rm apkcontainer
 # 删除镜像
 docker rmi lenceas/apkimg
 # 切换目录
-cd /home/Docker.Core
+cd /root/Project/Docker.Core
 # 发布项目
 ./Docker.Core.Publish.Linux.sh
 # 进入目录
-cd /home/Docker.Core/.PublishFiles
+cd /root/Project/Docker.Core/PublishFiles
 # 编译镜像
 docker build -t lenceas/apkimg .
 # 生成容器
